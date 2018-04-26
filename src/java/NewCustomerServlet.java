@@ -68,6 +68,7 @@ session.setAttribute("user", user);
             url = "/Success.jsp";
        getServletContext().getRequestDispatcher(url)
                .forward(request, response);
+       UserDB.toDatabase(user);
         }
 
         

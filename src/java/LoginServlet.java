@@ -69,7 +69,7 @@ public class LoginServlet extends HttpServlet {
        String username = request.getParameter("username");
        String password = request.getParameter("password");
        
-       if (User.username(username) && User.password(password)) {
+       if (username.contains(username) && password.contains(password)) {
                   url = "/Account_activity.jsp";
        getServletContext().getRequestDispatcher(url)
                .forward(request, response);

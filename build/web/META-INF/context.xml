@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="Context">
-		<xs:complexType>
-			<xs:attribute name="path" type="xs:string" use="required" />
-		</xs:complexType>
-	</xs:element>
-</xs:schema>
+<Context path="/TOBA">
+    <Resource auth="container" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" maxActive="100" maxIdle="60" maxWait="10000" name="jdbc/root" password="sesame" removeAbandoned="true" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:mysql"//localhost:3306/relishinajar?autoReconnect=true" username="root"/>
+</Context>

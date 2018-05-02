@@ -48,6 +48,14 @@
         <servlet-name>PasswordResetServlet</servlet-name>
         <url-pattern>/PasswordResetServlet</url-pattern>
     </servlet-mapping>
+
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/admin/login.jsp</form-login-page>
+            <form-error-page>/admin/login_error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
     <session-config>
         <session-timeout>
             30

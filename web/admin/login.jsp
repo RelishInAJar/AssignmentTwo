@@ -2,9 +2,9 @@
     
    <c:import url="includes/header.html" />
         <div id="shell"><br>
-            <form action="LoginServlet" method="post">
-            Username: <input type="text" name="username"><br>
-            Password: <input type="text" name="password"><br>
+            <form action="j_security_check" method="post">
+            Username: <input type="text" name="j_username"><br>
+            Password: <input type="text" name="j_password"><br>
             <input type="submit" value="Login">
             </form>
             <br>&nbsp;

@@ -2,7 +2,7 @@
     
    <c:import url="includes/header.html" />
         <div id="shell"><br>
-            The login information you entered was incorrect. <br>
+            The login information you entered was incorrect or you do not have access. <br>
             <a href="login.jsp">Return to login page.</a> 
             <br>&nbsp;
         </div>

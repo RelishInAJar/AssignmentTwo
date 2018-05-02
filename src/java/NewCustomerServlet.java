@@ -62,13 +62,13 @@ public class NewCustomerServlet extends HttpServlet {
         }
         
         else {
-            User user = new User(firstName, lastName, phone, address, city, state, zipcode, lastName+zipcode, "welcome1");
+            User user = new User(firstName, lastName, phone, address, city, state, zipcode, lastName + zipcode, "welcome1");
             HttpSession session = request.getSession();
-session.setAttribute("user", user);
+            session.setAttribute("user", user);
             url = "/Success.jsp";
        getServletContext().getRequestDispatcher(url)
                .forward(request, response);
-       UserDB.insertDatabase(user);
+       UserDB.insert(user);
         }
 
         

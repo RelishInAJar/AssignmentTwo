@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Context path="/TOBA">
-    <Resource auth="container" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" maxActive="100" maxIdle="60" maxWait="10000" name="jdbc/root" password="sesame" removeAbandoned="true" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:mysql"//localhost:3306/relishinajar?autoReconnect=true" username="root"/>
+    <Resource auth="container" driverClassName="com.mysql.jdbc.Driver" 
+              logAbandoned="true" maxActive="100" maxIdle="60" maxWait="10000" name="jdbc/toba" password="sesame" removeAbandoned="true" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:mysql//localhost:3306/toba?autoReconnect=true" username="root"/>
 </Context>

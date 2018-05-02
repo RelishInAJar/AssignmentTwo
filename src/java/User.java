@@ -4,15 +4,22 @@
  * and open the template in the editor.
  */
 
-import java.beans.*;
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  *
  * @author Relishinajar
  */
+
+@Entity
 public class User implements Serializable {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String firstName;
     private String lastName;
     private String phone;
@@ -38,7 +45,6 @@ public class User implements Serializable {
     }
 
     User(String firstName, String lastName, String phone, String address, String city, String state, String zipcode, String string, String welcome1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     public String getFirstName() {

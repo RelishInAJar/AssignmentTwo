@@ -40,10 +40,10 @@
         <error-code>404</error-code>
         <location>/Error_404.jsp</location>
     </error-page>
-    <error-page>
+    <!--<error-page>
         <exception-type>java.lang.Throwable</exception-type>
         <location>/Error_java.jsp</location>
-    </error-page>
+    </error-page>-->
     <servlet-mapping>
         <servlet-name>PasswordResetServlet</servlet-name>
         <url-pattern>/PasswordResetServlet</url-pattern>
